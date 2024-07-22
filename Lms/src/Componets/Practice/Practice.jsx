@@ -23,7 +23,7 @@ export default function Practice() {
         </CardContent>
 
        <div style={{display:"flex",alignItems:'center',marginLeft:"40%",gap:"10px",marginTop:"20px"}}>
-        <Link to="/Practice/Quize" style={{ textDecoration: 'none',backgroundColor:"rgb(50, 50, 213)",color:"white",padding:'0.4rem',borderRadius:"5px",marginTop:"-15px",marginLeft:'10px' }} variant='contained'>Quize</Link>
+        <Link to="/Practice/Quize" style={{ textDecoration: 'none',backgroundColor:"rgb(50, 50, 213)",color:"white",padding:'0.4rem',borderRadius:"5px",marginTop:"-15px"}} variant='contained'className='practicelink'>Quize</Link>
         <Link to="/Practice/Question" style={{ textDecoration: 'none',backgroundColor:"rgb(50, 50, 213)",color:"white",padding:'0.4rem',borderRadius:"5px",marginTop:"-15px" }} variant='contained'>Question</Link>
        </div>
       </Card>
