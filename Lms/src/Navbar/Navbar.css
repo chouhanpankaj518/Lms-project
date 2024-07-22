@@ -35,11 +35,15 @@
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        overflow-x: hidden;
     }
     .button{
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         margin-left: 30px;
+    }
+    .practicelink{
+        margin-left: -50px;
     }
 }
