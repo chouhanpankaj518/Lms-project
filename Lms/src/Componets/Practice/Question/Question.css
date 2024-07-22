@@ -1,0 +1,16 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;   
+}
+.solve{
+    padding: 0.4rem;
+    background-color: rgb(9, 235, 243);
+    color: rgb(31, 31, 76);
+    border-radius: 5px;
+    border: none;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    font-size: large;
+}

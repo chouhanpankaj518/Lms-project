@@ -1,0 +1,45 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.7rem;
+    box-shadow: inset 0px 0px 10px black;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.navbar img{
+    height: 3rem;
+    border-radius: 100px;
+}
+.navbar div a{
+    color: black;
+    text-decoration: none;
+    margin: 40px;
+}
+.button{
+    display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+}
+.navbar{
+
+}
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    .button{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 30px;
+    }
+}
