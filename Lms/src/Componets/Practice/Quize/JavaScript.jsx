@@ -3,14 +3,14 @@ import { Box, Card, Button, Fab } from '@mui/material';
 import Practice from '../Practice';
 export default function JavaScript() {
 
-  const startingMinutes = 1;
+  const startingMinutes = 25;
   const [time, setTime] = useState(startingMinutes * 60);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setTime(time => {
         if (time > 0) {
-          return time - 25
+          return time - 1
         }
         else {
           clearInterval(intervalId)

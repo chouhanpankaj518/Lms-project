@@ -3,7 +3,7 @@ import { Box, Card, Button, Fab } from '@mui/material';
 import { useState } from 'react';
 import Practice from '../Practice';
 export default function Reactjs() {
-  const startingMinutes = 1;
+  const startingMinutes = 25;
   const [time, setTime] = useState(startingMinutes * 60);
   useEffect(() => {
     const intervalId = setInterval(() => {
