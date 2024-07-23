@@ -13,94 +13,94 @@ export default function Home() {
     // Add more courses as needed
   ];
 
-  function alerthendle(){
+  function alerthendle() {
     alert("sorry is not connect more information")
   }
 
   return (
     <Container>
       <Box
-  sx={{
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    minHeight: '100vh',
-    padding: '2rem',
-    textAlign: 'center'
-  }}
->
-  <Typography variant="h2" component="h1" gutterBottom>
-    Welcome to LCM Learning Platform
-  </Typography>
-  
-  <Typography variant="h5" component="h2" gutterBottom>
-    A responsive learning experience using Material-UI
-  </Typography>
-  
-  <Grid container spacing={4} justifyContent="center" marginTop={4} marginBottom={6}>
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ height: '100%' }}>
-        <CardContent>
-          <Typography variant="h6" component="h3" gutterBottom>
-            Interactive Courses
-          </Typography>
-          <Typography variant="body2">
-            Engage with our cutting-edge courses designed for optimal learning and retention.
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Explore Courses</Button>
-        </CardActions>
-      </Card>
-    </Grid>
-    
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ height: '100%' }}>
-        <CardContent>
-          <Typography variant="h6" component="h3" gutterBottom>
-            Progress Tracking
-          </Typography>
-          <Typography variant="body2">
-            Monitor your learning journey with detailed progress reports and analytics.
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">View Demo</Button>
-        </CardActions>
-      </Card>
-    </Grid>
-    
-    <Grid item xs={12} sm={6} md={4}>
-      <Card sx={{ height: '100%' }}>
-        <CardContent>
-          <Typography variant="h6" component="h3" gutterBottom>
-            Community Support
-          </Typography>
-          <Typography variant="body2">
-            Connect with peers and mentors in our vibrant learning community.
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small">Join Community</Button>
-        </CardActions>
-      </Card>
-    </Grid>
-  </Grid>
-  
-  <Grid container spacing={2} justifyContent="center">
-    <Grid item>
-      <Button variant="contained" color="primary" size="large">
-        Get Started
-      </Button>
-    </Grid>
-    <Grid item>
-      <Button variant="outlined" color="secondary" size="large">
-        Learn More
-      </Button>
-    </Grid>
-  </Grid>
-</Box>
+        sx={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '100vh',
+          padding: '2rem',
+          textAlign: 'center'
+        }}
+      >
+        <Typography variant="h2" component="h1" gutterBottom>
+          Welcome to LCM Learning Platform
+        </Typography>
+
+        <Typography variant="h5" component="h2" gutterBottom>
+          A responsive learning experience using Material-UI
+        </Typography>
+
+        <Grid container spacing={4} justifyContent="center" marginTop={4} marginBottom={6}>
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ height: '100%' }}>
+              <CardContent>
+                <Typography variant="h6" component="h3" gutterBottom>
+                  Interactive Courses
+                </Typography>
+                <Typography variant="body2">
+                  Engage with our cutting-edge courses designed for optimal learning and retention.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Explore Courses</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ height: '100%' }}>
+              <CardContent>
+                <Typography variant="h6" component="h3" gutterBottom>
+                  Progress Tracking
+                </Typography>
+                <Typography variant="body2">
+                  Monitor your learning journey with detailed progress reports and analytics.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">View Demo</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={4}>
+            <Card sx={{ height: '100%' }}>
+              <CardContent>
+                <Typography variant="h6" component="h3" gutterBottom>
+                  Community Support
+                </Typography>
+                <Typography variant="body2">
+                  Connect with peers and mentors in our vibrant learning community.
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Button size="small">Join Community</Button>
+              </CardActions>
+            </Card>
+          </Grid>
+        </Grid>
+
+        <Grid container spacing={2} justifyContent="center">
+          <Grid item>
+            <Button variant="contained" color="primary" size="large">
+              Get Started
+            </Button>
+          </Grid>
+          <Grid item>
+            <Button variant="outlined" color="secondary" size="large">
+              Learn More
+            </Button>
+          </Grid>
+        </Grid>
+      </Box>
       <Box
         sx={{
           width: '100%',

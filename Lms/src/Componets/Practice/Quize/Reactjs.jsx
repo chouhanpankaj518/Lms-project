@@ -1,31 +1,27 @@
 import React, { useEffect } from 'react'
-import { Box, Card, Button,Fab } from '@mui/material';
+import { Box, Card, Button, Fab } from '@mui/material';
 import { useState } from 'react';
 import Practice from '../Practice';
 export default function Reactjs() {
-
   const startingMinutes = 1;
   const [time, setTime] = useState(startingMinutes * 60);
-
   useEffect(() => {
-      const intervalId = setInterval(() => {
-          setTime(time =>{
-            if(time>0){
-              return time-1
-            }else{
-              clearInterval(intervalId)
-              handleSubmit()
-            }
-          }
-          );
-      }, 1000);
+    const intervalId = setInterval(() => {
+      setTime(time => {
+        if (time > 0) {
+          return time - 1
+        } else {
+          clearInterval(intervalId)
+          handleSubmit()
+        }
+      }
+      );
+    }, 1000);
 
-      return () => clearInterval(intervalId);
+    return () => clearInterval(intervalId);
   }, []);
-
   const minutes = Math.floor(time / 60);
   const seconds = time % 60;
-  
   const questions = [
     {
       text: "What is React.js?",
@@ -248,9 +244,9 @@ export default function Reactjs() {
   return (
     <div className="quiz-container">
       <Practice />
-      <Fab  sx={{background:"aqua",color:"black",position:"sticky",top:"70px",mt:"10px"}}>
-            {`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}
-        </Fab>
+      <Fab sx={{ background: "aqua", color: "black", position: "sticky", top: "70px", mt: "10px" }}>
+        {`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`}
+      </Fab>
       <Box sx={{ display: "flex", flexWrap: "wrap" }}>
         {
           questions.map((question, questionIndex) => (
@@ -262,8 +258,6 @@ export default function Reactjs() {
                   <div className="option" key={option.id}>
                     <br />
                     <label>
-
-
                       <input className='inputtext'
                         type="radio"
                         name={`question-${questionIndex}`}
@@ -271,8 +265,6 @@ export default function Reactjs() {
                         onChange={() => handleAnswerSelect(questionIndex, option.id)}
                         disabled={isSubmitted}
                       />
-
-
                       {option.text}
                     </label>
                   </div>
@@ -282,8 +274,6 @@ export default function Reactjs() {
           ))}
       </Box>
       <Button color='success' sx={{ width: "4rem", height: "3rem", border: "1px solid black", ml: "35rem", mt: "1rem" }} onClick={handleSubmit} disabled={isSubmitted}>Submit</Button>
-
-
       {isSubmitted && (
         <div className='bossresult'>
           {questions.map((question, questionIndex) => (

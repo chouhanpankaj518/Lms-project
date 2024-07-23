@@ -10,7 +10,7 @@ export default function JavaScript() {
     const intervalId = setInterval(() => {
       setTime(time => {
         if (time > 0) {
-          return time - 1
+          return time - 25
         }
         else {
           clearInterval(intervalId)
