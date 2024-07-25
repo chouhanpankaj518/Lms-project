@@ -1,7 +1,6 @@
 import { Card, CardContent, CardMedia, Typography } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import logo from '../../Assets/pankaj.jpg'
 import blob from "../../Assets/blob.svg"
 export default function Practice() {
   return (

@@ -48,7 +48,7 @@ export default function Editor({ select }) {
   function formsubmit(e) {
     e.preventDefault()
     setprompt(e.target[0].value = select.question)
-    console.log()
+    alert("wait some time")
   }
 
   function writehendle(e) {
@@ -70,7 +70,7 @@ export default function Editor({ select }) {
 
       <form onSubmit={(e) => formsubmit(e)}>
         <input type="text" style={{ display: "none" }} />
-        <button style={{ marginLeft: "45%" }}><Button variant='contained'>my i help you </Button></button>
+        <button style={{ marginLeft: "44%" }}><Button variant='contained'>my i help you </Button></button>
 
       </form>
       <Box sx={{ backgroundColor: "white", wordSpacing: 3 }} >{res}</Box>

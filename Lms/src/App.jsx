@@ -15,6 +15,7 @@ import CardDetails from './Componets/Course/CardDetails.jsx'
 import LoginPage from './Navbar/Login.jsx'
 import Signup from './Navbar/Signup.jsx'
 
+
 export default function App() {
   let data = [
     {
@@ -132,8 +133,10 @@ export default function App() {
 let [select,setselect]=useState([])
   return (
     <div>
+      
       <BrowserRouter>
       <Navbar/>
+     
       <Routes>
         <Route path='/'element={<Home/>}/>     
         <Route path='Course'element={<Course data={data}/>}/>           

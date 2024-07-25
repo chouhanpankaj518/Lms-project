@@ -273,7 +273,7 @@ export default function Reactjs() {
             </Card>
           ))}
       </Box>
-      <Button color='success' sx={{ width: "4rem", height: "3rem", border: "1px solid black", ml: "35rem", mt: "1rem" }} onClick={handleSubmit} disabled={isSubmitted}>Submit</Button>
+      <Button color='primary' variant='contained'sx={{ width: "4rem", height: "3rem", border: "1px solid black", ml: "35rem", mt: "1rem" }}  onClick={handleSubmit} disabled={isSubmitted}>Submit</Button>
       {isSubmitted && (
         <div className='bossresult'>
           {questions.map((question, questionIndex) => (
