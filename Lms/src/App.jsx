@@ -15,7 +15,6 @@ import CardDetails from './Componets/Course/CardDetails.jsx'
 import LoginPage from './Navbar/Login.jsx'
 import Signup from './Navbar/Signup.jsx'
 
-
 export default function App() {
   let data = [
     {
@@ -128,15 +127,12 @@ export default function App() {
       Week11:' Data Visualization with Matplotlib'
     }
   ]
-
-
 let [select,setselect]=useState([])
   return (
     <div>
-      
+
       <BrowserRouter>
-      <Navbar/>
-     
+      <Navbar/>    
       <Routes>
         <Route path='/'element={<Home/>}/>     
         <Route path='Course'element={<Course data={data}/>}/>           
@@ -149,13 +145,10 @@ let [select,setselect]=useState([])
         <Route path='/Practice/Quize/Htmlcss' element={<Htmlcss/>}/>
         <Route path='/Practice/Quize/Reactjs' element={<Reactjs/>}/>
         <Route path='/Editor' element={<Editor select={select} />}/>
-        <Route path='/Course/CardDetails' element={<CardDetails/>}/>
-       
-        
+        <Route path='/Course/CardDetails' element={<CardDetails/>}/>       
       </Routes>
       </BrowserRouter>
       
     </div>
   )
 }
-

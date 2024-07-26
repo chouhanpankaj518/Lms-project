@@ -31,7 +31,7 @@ export default function Home() {
         }}
       >
         <Typography variant="h2" component="h1" gutterBottom>
-          Welcome to LCM Learning Platform
+          Welcome to LMS Learning Platform
         </Typography>
 
         <Typography variant="h5" component="h2" gutterBottom>
